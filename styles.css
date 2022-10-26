@@ -1,5 +1,8 @@
 body{
   margin: 0;
+
+}
+footer{
   background-color: #FF8787;
 }
 
@@ -7,12 +10,14 @@ body{
   background-color: #FF8787;
   text-align: center;
   font-family: 'Fuzzy Bubbles', cursive;
+
 }
 
 .title{
-  margin-top: 100px;
+  padding-top: 6.25rem;
   color: white;
   font-size: 400%;
+  margin-top: 0;
 }
 
 .boyimg{
@@ -23,6 +28,8 @@ body{
 .titlepara{
   font-size: 400%;
   color: white;
+  margin-bottom: 0;
+  padding-bottom: 6.25rem;
 }
 
 #story{
@@ -88,9 +95,39 @@ body{
   color: white;
 }
 .thankyou{
+  background-color: #FF8787;
   font-family: 'Fuzzy Bubbles', cursive;
   color: white;
   text-align: center;
   font-size: 400%;
   padding-top: 1.25rem;
+  padding-bottom: 3.25rem;
+}
+
+@media (max-width: 900px) {
+  .title,.titlepara {
+    font-size: 200%;
+  }
+  .storycontent, .storycontent3{
+    width: 80%;
+    margin: auto;
+  }
+  .boyimg, .coinimg, .promiseimg, .copyimg, .teacherimg, .p2p{
+    max-width: 100%;
+    float: none;
+
+  }
+  .para1, .para3{
+    clear: left;
+  }
+  .para2, .para4{
+    clear: right;
+  }
+  .thankyou{
+    font-size: 100%;
+  }
+  #end{
+    font-size: 100%;
+  }
+
 }
